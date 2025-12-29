@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Slideshow</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="slideshow">
+      <div class="logo-div">
+        <img src="logo.png" alt="" class="logo" />
+      </div>
+      <div class="slide active">
+        <picture>
+          <!-- Desktop image -->
+          <source srcset="slide1.png" media="(min-width: 768px)" />
+          <!-- Mobile image -->
+          <img src="slideSmall1.png" alt="Hero Slide 1" />
+        </picture>
+
+        <div class="content">
+          <h1>Modern Royal</h1>
+          <p>
+            We deal in Luxury switches, Power Plugs, Switch Boards and Sockets
+            in different designs and colours in whole sale rates.
+          </p>
+          <div class="buttons">
+            <a href="#" class="btn">Contact Us</a>
+            <a href="#" class="btn">Explore More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <picture>
+          <source srcset="slide2.png" media="(min-width: 768px)" />
+          <img src="slideSmal2.png" alt="Hero Slide 2" />
+        </picture>
+
+        <div class="content">
+          <h1>Modern Royal</h1>
+          <p>
+            We deal in Luxury switches, Power Plugs, Switch Boards and Sockets
+            in different designs and colours in whole sale rates.
+          </p>
+          <div class="buttons">
+            <a href="#" class="btn">Contact Us</a>
+            <a href="#" class="btn">Explore More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <picture>
+          <source srcset="slide1.png" media="(min-width: 768px)" />
+          <img src="slideSmall1.png" alt="Hero Slide 3" />
+        </picture>
+
+        <div class="content">
+          <h1>Modern Royal</h1>
+          <p>
+            We deal in Luxury switches, Power Plugs, Switch Boards and Sockets
+            in different designs and colours in whole sale rates.
+          </p>
+          <div class="buttons">
+            <a href="#" class="btn">Contact Us</a>
+            <a href="#" class="btn">Explore More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <!-- <span class="prev" onclick="changeSlide(-1)">❮</span>
+      <span class="next" onclick="changeSlide(1)">❯</span> -->
+    </section>
+
+    <section class="content-section">
+      <!-- Section Header -->
+      <div class="section-header">
+        <h2>Our Services</h2>
+      </div>
+
+      <div class="section-header section-heading">
+        <h3>Slim Switch</h3>
+      </div>
+
+      <!-- First Image Row -->
+      <div class="image-row">
+        <img src="switch1.png" alt="Service 1" />
+        <img src="switch2.png" alt="Service 2" />
+        <img src="switch3.png" alt="Service 3" />
+      </div>
+
+      <!-- Second Section -->
+      <div class="section-header section-heading">
+        <h3>Modern Switch</h3>
+      </div>
+
+      <!-- Second Image Row -->
+      <div class="image-row">
+        <img src="switch4.png" alt="Project 1" />
+        <img src="switch5.jpeg" alt="Project 2" />
+        <img src="switch6.png" alt="Project 3" />
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-container">
+        <!-- Left Content -->
+        <div class="contact-info">
+          <h2>Contact Us</h2>
+          <p class="tagline">
+            Have a question or project in mind? We’d love to hear from you.
+          </p>
+
+          <p><strong>Email:</strong> info@yourwebsite.com</p>
+          <p><strong>Phone:</strong> +92 300 1234567</p>
+          <div class="social">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <img src="facebookIcon.png" alt="Facebook" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="contact-right">
+          <!-- Social Icon -->
+
+          <!-- Contact Form -->
+          <form
+            class="contact-form"
+            action="mailto:info@yourwebsite.com"
+            method="POST"
+            enctype="text/plain"
+          >
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="4"
+              required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
